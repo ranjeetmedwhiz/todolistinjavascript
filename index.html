@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+        integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <div class="body-overlay opacity-80" style="background-color: #162f9e"></div>
+    <div class="container">
+
+        <div class="header">
+
+            <h1>TO DO LIST</h1>
+        </div>
+        <div class="input-group mb-3">
+
+            <input type="text" class="form-control taskname" placeholder="Enter your task"
+                aria-describedby="basic-addon2" />
+            <div class="input-group-append">
+                <button type="button" class="btn btn-primary btnTask">Add Task
+
+                </button>
+            </div>
+        </div >
+        <ul class="tasklist" id="listingTable" > </ul>
+        
+        <button type="button" class="btn btn-link btnClear">Clear All</button>
+
+
+        <a href="javascript:prevPage()" id="btn_prev">Prev</a>
+        <a href="javascript:nextPage()" id="btn_next">Next</a>
+        page: <span id="page"></span>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
